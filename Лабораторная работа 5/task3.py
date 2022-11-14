@@ -1,9 +1,6 @@
 from random import randint
 
-def get_unique_list_numbers() -> list[int]:
-    start = -10
-    stop = 10
-    count = 15
+def get_unique_list_numbers(start=-10, stop=10, count=15) -> list[int]:
     list_ = []
     while len(list_) < count:
         num = randint(start, stop)
