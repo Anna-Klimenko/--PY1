@@ -2,11 +2,11 @@ import json
 
 INPUT_FILE = "input.csv"
 
-def csv_to_list_dict(filename, delimeter=',') -> list[dict]:
+def csv_to_list_dict(filename, delimiter=',') -> list[dict]:
     list_dict = []
 
     with open(filename, 'r') as f:
-        list_lines = [line.rstrip().split(delimeter) for line in f]
+        list_lines = [line.rstrip().split(delimiter) for line in f]
         column = list_lines[0]
         list_value = [value for value in list_lines[1:]]
 
